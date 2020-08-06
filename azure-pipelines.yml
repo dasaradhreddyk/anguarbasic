@@ -23,4 +23,7 @@ steps:
     command: 'install'
 
 
-    
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        customCommand: 'run prod-buid-dev'
